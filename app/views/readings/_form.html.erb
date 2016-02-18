@@ -1,0 +1,20 @@
+<%= form_for(@reading) do |f| %>
+
+<%= error_messages(@reading) %>
+
+  <div class="field">
+    <%= f.label :date_reading %><br>
+    <%= f.date_select :date_reading %>
+  </div>
+  <div class="field">
+    <%= f.label :reading %><br>
+    <%= f.number_field :reading %>
+  </div>
+  <div class="field">
+    <%= f.label :hydrometer_id %><br>
+    <%= f.text_field :hydrometer_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

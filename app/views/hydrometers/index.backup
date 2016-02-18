@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Hydrometers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hydrometers.each do |hydrometer| %>
+      <tr>
+        <td><%= hydrometer.user.nome %></td>
+          <td><%= hydrometer.user.sobrenome %></td>
+        <td><%= link_to 'Show', hydrometer %></td>
+        <td><%= link_to 'Edit', edit_hydrometer_path(hydrometer) %></td>
+        <td><%= link_to 'Destroy', hydrometer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hydrometer', new_hydrometer_path %>

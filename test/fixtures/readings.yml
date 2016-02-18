@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_reading: 2015-11-06
+  reading: 1.5
+  consumption: 1
+  month_reference: 1.5
+  invoiceValue: 1.5
+  paid: MyString
+
+two:
+  date_reading: 2015-11-06
+  reading: 1.5
+  consumption: 1
+  month_reference: 1.5
+  invoiceValue: 1.5
+  paid: MyString

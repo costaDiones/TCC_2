@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  affair: MyString
+  type: 
+  daterequest: 2015-10-06
+  descripition: MyText
+  user_id: 
+
+two:
+  affair: MyString
+  type: 
+  daterequest: 2015-10-06
+  descripition: MyText
+  user_id: 

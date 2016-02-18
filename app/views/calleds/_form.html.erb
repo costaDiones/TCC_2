@@ -1,0 +1,27 @@
+<%= form_for(@called) do |f| %>
+  <%= error_messages(@called) %>
+
+  <div class="field">
+    <%= f.label :affair %><br>
+    <%= f.text_field :affair %>
+  </div>
+  <div class="field">
+    <%= f.label :datescheduling %><br>
+    <%= f.date_select :datescheduling %>
+  </div>
+  <div class="field">
+    <%= f.label :typecalled %><br>
+    <%= f.text_field :typecalled %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

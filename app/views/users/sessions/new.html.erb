@@ -1,0 +1,120 @@
+<div id="topo" class="row topo">
+
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fechar fa fa-times"></i></a>
+      <li class="sidebar-brand">
+        <a href="/"  onclick = $("#menu-close").click(); >Página Inicial</a>
+      </li>
+
+      <li>
+        <a href="/novousuario"  >Novo Usuario</a>
+      </li>
+      <li>
+        <a ><%= link_to "Esqueceu a Senha", new_password_path(resource_name) %></a>
+      </li>
+      <li>
+        <a   ><%= link_to "Reenviar instruções de confirmação", new_confirmation_path(resource_name) %></a>
+      </li>
+      <li>
+        <a href="#contato" onclick = $("#menu-close").click(); >Contato</a>
+      </li>
+
+    </ul>
+  </nav>
+</div>
+
+<header id="top" class="header ">
+
+  <ul id="cbp-bislideshow" class="cbp-bislideshow">
+
+    <li><img src="/assets/agua2.jpg" alt="image02"/>
+    </li>
+    <li><img src="/assets/agua13.JPG" alt="image03"/>
+    </li>
+    <li><img src="/assets/agua_7.jpg" alt="image04"/>
+    </li>
+    <li><img src="/assets/agua11.jpg" alt="image04"/>
+    </li>
+
+  </ul>
+
+  <div class="text-vertical-center col-xs-12 ">
+    <h1>CAOSC</h1>
+    <h3>Companhia de Água do Oeste de Santa Catarina</h3>
+    <br>
+  </div>
+
+  <div class="container">
+    <div class="login1 col-md-4 col-md-offset-4 " id="login">
+      <h1>Entre com o Login</h1>
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <form action="#">
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+            <%= f.email_field :email, autofocus: true, class:'form-control', placeholder:'E-mail'%>
+        </div>
+
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+
+          <%= f.password_field :password, autocomplete: "off",class:'form-control', placeholder:'Senha' %>
+        </div>
+
+
+        <button type="submit" class="botaoEntra btn btn-primary">
+          Entrar
+        </button>
+      </form>
+        <% end -%>
+    </div>
+
+  </div>
+
+</header>
+
+
+
+
+
+<div class="row ">
+  <footer>
+    <div class="container  footerFinal" id="contato">
+      <div class="icon col-lg-10 col-lg-offset-1 text-center">
+        <h4><strong>CAOSC</strong></h4>
+        <p>
+          R. Marciano Leite de Almeida, 660
+          <br>
+          Veneza, Xanxerê - SC, 89820-000
+
+        </p>
+        <ul class="list-unstyled">
+          <li>
+            <i class="fa fa-phone fa-fw"></i> (49)8501-0147
+          </li>
+          <li>
+            <i class="fa fa-envelope-o fa-fw "></i><a href="mailto:name@example.com" class="footerFinal">costadiones@gmail.com</a>
+          </li>
+        </ul>
+        <br>
+        <ul class="list-inline" >
+          <li>
+            <a href="https://www.facebook.com/" class="footerFinal"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" class="footerFinal"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+
+          </li>
+
+        </ul>
+        <hr class="small">
+        <p class="text-muted footerFinal">
+          Todos os direitos reservados <br/>&copy; D.C soluções em TI
+        </p>
+      </div>
+    </div>
+
+
+  </footer>
+</div>

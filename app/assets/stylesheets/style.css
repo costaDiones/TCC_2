@@ -1,0 +1,327 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+
+.icon{
+	color: #fff !important;
+}
+.field  {
+	font-size: 25px;
+	color: black ;
+	text-align: center;
+
+}
+
+
+.footerFinal{
+	color: #FFFFFF !important;
+}
+
+.text-vertical-center {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+}
+
+.text-vertical-center h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 4.5em;
+	font-weight: 700;
+}
+
+.btn-dark {
+	color: #000;
+	font-size: 25px;
+}
+
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+	color: #fff;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#sidebar-wrapper {
+	z-index: 1000;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	margin-left: -250px;
+	overflow-y: auto;
+	background: #101010;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li {
+	text-indent: 20px;
+	line-height: 40px;
+}
+
+.sidebar-nav li a {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.login1 a, h1, h5 {
+	color: #FFFFFF;
+}
+
+.sidebar-nav li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+	text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+	height: 55px;
+	font-size: 18px;
+	line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand  a {
+	color: #FFFFFF;
+}
+
+.sidebar-nav, .topo a, .radiobutton {
+	color: #FFFFFF !important;
+}
+
+.topo a:hover {
+
+	color: #fff;
+
+}
+
+#menu-toggle {
+	z-index: 1;
+	position: fixed;
+	top: 10;
+	left: 0;
+}
+
+
+.content-section-a {
+	padding: 50px 0;
+	background-color: #0023A5;
+}
+
+.content-section-a p, h2 {
+	color: #FFFFFF;
+}
+
+
+.botaoEntra  {
+	margin-top: 20px;
+	background:   $button-background-color;
+	border: none;
+	font-size: 1.8em;
+	font-weight: 500;
+	padding: 0px 0;
+	width: 40%;
+	height: 40px;
+	background-color: #101010 !important;
+	float: right;
+	border-radius: 5px;
+	color: lighten($button-background-color, 40%);
+	border-bottom: 4px solid darken($button-background-color, 10%);
+}
+
+
+.cbp-bislideshow {
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	padding: 0;
+	margin: 0;
+}
+
+.cbp-bislideshow li {
+	position: absolute;
+	width: 101%;
+	height: 101%;
+	top: -0.5%;
+	left: -0.5%;
+	opacity: 0;
+	-webkit-transition: opacity 3s;
+	-moz-transition: opacity 3s;
+	transition: opacity 2s;
+}
+
+.backgroundsize .cbp-bislideshow li {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.backgroundsize .cbp-bislideshow li img {
+	display: none;
+}
+
+.cbp-bislideshow li img {
+	display: block;
+	width: 100%;
+}
+
+p#texto {
+	text-align: center;
+	color: white;
+	font-size: 18px;
+}
+
+div#div_file {
+	margin-top: 5px;
+	margin-left: 5px;
+	position: relative;
+	background-color: #2499e3;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0px 3px 0px #1a71a9;
+}
+
+input#btn_enviar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+
+
+
+
+.botaoEntra .botaoRequiSenha:hover {
+	transition: ease-in 1s all;
+	background-color: green !important;
+}
+
+.botaoRequiSenha  {
+	margin-top: 20px;
+	background:   $button-background-color;
+	border: none;
+	font-size: 1.4em;
+	font-weight: 400;
+	padding: 0px 0;
+	width: 40%;
+	height: 30px;
+	background-color: black !important;
+	float: right;
+	border-radius: 5px;
+	color: lighten($button-background-color, 40%);
+	border-bottom: 4px solid darken($button-background-color, 10%);
+}
+
+
+
+.input-group {
+	padding-top: 15px;
+	border-bottom: 10px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidebar-wrapper.active {
+	left: 250px;
+	width: 250px;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+
+.header {
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+
+
+.service-item {
+	margin-bottom: 30px;
+}
+
+.noossoTrabalho {
+	padding: 50px 0;
+}
+
+.caosc-item {
+	margin-bottom: 30px;
+}
+
+.map {
+	margin-top: 20px;
+	height: 500px;
+}
+
+
+
+.bg-verde {
+	background-color: #0bbbb4 !important;
+	color: #fff !important;
+}
+
+.bg-vermelho {
+	background-color: #C9302C !important;
+	color: #fff !important;
+}
+
+
+
+.navbar-brand, .dropdown-toggle{
+	color: #fff !important;
+}
+
+
+
+.form-area
+{
+  background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+	text-align: center;
+
+	}
+
+.bemvindo h1 {
+	color: black !important;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 50px;
+}

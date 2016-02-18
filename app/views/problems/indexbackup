@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Problems</h1>
+  <% if policy(@problems).index? %>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Descripition</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @problems.each do |problem| %>
+      <tr>
+        <td><%= problem.title %></td>
+        <td><%= problem.descripition %></td>
+        <td><%= problem.user.nome %></td>
+        <td><%= link_to 'Show', problem %></td>
+        <td><%= link_to 'Edit', edit_problem_path(problem) %></td>
+        <td><%= link_to 'Destroy', problem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  <br>
+
+<%= link_to 'New Problem', new_problem_path %>
+
+
+<%else%>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Descripition</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @problems.each do |problem| %>
+      <tr>
+        <td><%= problem.title %></td>
+        <td><%= problem.descripition %></td>
+        <td><%= problem.user.nome %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  <br>
+
+<%= link_to 'New Problem', new_problem_path %>
+
+<%end%>

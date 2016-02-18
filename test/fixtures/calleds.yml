@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  affair: MyString
+  datescheduling: 2015-10-07
+  typecalled: MyString
+  description: MyText
+  user_id: 
+
+two:
+  affair: MyString
+  datescheduling: 2015-10-07
+  typecalled: MyString
+  description: MyText
+  user_id: 

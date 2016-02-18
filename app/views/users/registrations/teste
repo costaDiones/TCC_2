@@ -1,0 +1,80 @@
+<div class="field">
+  <%= f.label :nome %><br />
+  <%= f.text_field :nome, autofocus: true %>
+</div>
+
+<div class="field">
+  <%= f.label :sobrenome %><br />
+  <%= f.text_field :sobrenome %>
+</div>
+
+<div class="field">
+  <%= f.label :sexo %><br />
+  <%= f.text_field :sexo %>
+</div>
+
+<div class="field">
+  <%= f.label :cpf %><br />
+  <%= f.text_field :cpf  %>
+</div>
+
+<div class="field">
+  <%= f.label :datanascimento %><br />
+  <%= f.date_field :datanascimento  %>
+</div>
+
+<div class="field">
+  <%= f.label :endereco %><br />
+  <%= f.text_field :endereco  %>
+</div>
+
+<div class="field">
+  <%= f.label :bairro %><br />
+  <%= f.text_field :bairro  %>
+</div>
+
+<div class="field">
+  <%= f.label :numero %><br />
+  <%= f.text_field :numero  %>
+</div>
+
+<div class="field">
+  <%= f.label :cidade %><br />
+  <%= f.text_field :cidade  %>
+</div>
+
+<div class="field">
+  <%= f.label :uf %><br />
+  <%= f.text_field :uf  %>
+</div>
+
+<div class="field">
+  <%= f.label :complemento %><br />
+  <%= f.text_field :complemento  %>
+</div>
+
+<div class="field">
+  <%= f.label :telefone %><br />
+  <%= f.text_field :telefone  %>
+</div>
+
+
+
+
+<div class="field">
+  <%= f.label :email %><br />
+  <%= f.email_field :email %>
+</div>
+
+<div class="field">
+  <%= f.label :password %>
+  <% if @minimum_password_length %>
+  <em>(<%= @minimum_password_length %> characters minimum)</em>
+  <% end %><br />
+  <%= f.password_field :password, autocomplete: "off" %>
+</div>
+
+<div class="field">
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation, autocomplete: "off" %>
+</div>

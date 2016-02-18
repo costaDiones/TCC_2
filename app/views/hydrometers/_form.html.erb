@@ -1,0 +1,26 @@
+<%= form_for(@hydrometer) do |f| %>
+  <% if @hydrometer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hydrometer.errors.count, "error") %> prohibited this hydrometer from being saved:</h2>
+
+      <ul>
+      <% @hydrometer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field ">
+
+
+  <%=  f.collection_select(:user_id, User.all, :id, :nome) %>
+
+  </div>
+
+
+
+
+
+<% end %>
